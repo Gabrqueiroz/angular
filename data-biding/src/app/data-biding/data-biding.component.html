@@ -1,0 +1,34 @@
+<!--section class="two-way-binding">
+    <article>
+        <h3>Two-way data biding</h3>
+
+        <div>
+            <input type="text"
+                [value]="nome"
+            />
+        
+                        
+            <p>Voce digitou {{nome}}</p>    
+        </div>
+
+        
+
+        <div>
+            <p>meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}} anos de idade </p>
+
+            <input type="text" [(ngModel)]="pessoa.nome">    
+            <input type="text" [(ngModel)]="pessoa.idade"> 
+        
+         </div-->
+
+         <section class="input-output-properties">
+             <article>
+                 <h3>input Output Property</h3>
+                 
+                <app-input-property [nome]="NomeDoCurso"></app-input-property>
+
+                <app-output-property [valor]="1">
+                   (mudouValor)="onMudouValor($event)" 
+                </app-output-property>
+             </article>
+         </section>
